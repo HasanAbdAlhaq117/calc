@@ -11,7 +11,7 @@ public class calctest {
 	calculater x =new calculater();
 
 	@Test
-	public void Both_Positive() {
+	public void Both_Positive() throws Exception {
 	
 
 		double add=x.add(21.1, 2);
@@ -21,13 +21,13 @@ public class calctest {
 	}
 
 	@Test
-	public void Both_Negative() {
+	public void Both_Negative() throws Exception{
 		double add=x.add(-1, -1);
 		assertTrue("both input are negative ->output should be negative", add<0);
 
 	}
 	@Test
-	public void Both_Zero() {
+	public void Both_Zero() throws Exception{
 
 
 		double add=x.add(0, 0);
